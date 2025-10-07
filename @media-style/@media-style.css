@@ -1,0 +1,168 @@
+@media screen and (max-width: 768px) {
+
+    html,
+    body {
+        overflow-x: hidden;
+        scroll-behavior: smooth;
+    }
+
+    header {
+        justify-content: space-between;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    .nav-links {
+        position: absolute;
+        top: 90px;
+        right: -220px;
+        /* Hidden by default */
+        flex-direction: column;
+        background: #010110;
+        width: 200px;
+        padding: 1rem;
+        transition: right 0.3s ease;
+        z-index: 100;
+    }
+
+    .nav-links.active {
+        right: 0;
+        /* Slide in */
+    }
+
+
+
+
+    .crypto-img {
+        margin-top: -10%;
+        width: 250px;
+        margin-left: -8%;
+    }
+
+
+
+    .access-btn-div {
+        /* background-color: gray; */
+        width: 80px;
+        height: 50px;
+        padding-left: 2px;
+        padding-top: 2px;
+        margin-left: -12%;
+        margin-top: 2%;
+        margin-right: 2px;
+        position: relative;
+        z-index: 50;
+    }
+
+    .access-btn {
+        width: 80px;
+        height: 40px;
+        padding: 1px;
+        font-size: 10px;
+        /* margin-left: 50%; */
+        border-radius: 10px;
+    }
+
+    .create-btn {
+        height: 60px;
+    }
+
+    .background-video {
+        width: 100%;
+    }
+
+    .first-child {
+        width: 100%;
+        height: 350px;
+        margin-left: -16%;
+
+        /* margin-top: -25%; */
+        /* background-color: gray; */
+        h1 {
+            font-size: 45px;
+        }
+    }
+
+    .second-child {
+        display: none;
+    }
+
+    .overall-div {
+        margin-top: 50%;
+
+    }
+
+    .section_one_title {
+        width: 100%;
+        margin-top: 15%;
+        margin-bottom: 15%;
+
+        span {
+            font-size: 33px;
+
+            p {
+                width: 250px;
+                height: 50px;
+                padding: 5px;
+                /* background-color: red; */
+                margin: auto;
+            }
+        }
+    }
+
+    .section_one {
+        width: 100%;
+        gap: 20%;
+
+        .step {
+
+            p {
+                width: 280px;
+                height: 50px;
+                padding: 5px;
+                /* background-color: red; */
+
+            }
+        }
+    }
+
+    .get-started-div {
+        margin-top: 150%;
+    }
+
+    .section_two_title {
+        width: 100%;
+        margin-top: 50%;
+
+        span {
+            p {
+                width: 250px;
+                height: 50px;
+                padding: 5px;
+                /* background-color: red; */
+                margin: auto;
+            }
+        }
+    }
+
+    .section-two {
+        width: 100%;
+        margin-top: 20%;
+    }
+
+    .section_three_title {
+        width: 100%;
+
+        span {
+            p {
+                width: 250px;
+                height: 50px;
+                padding: 5px;
+                /* background-color: red; */
+                margin: auto;
+            }
+        }
+    }
+}

@@ -1,0 +1,102 @@
+@media screen and (max-width: 768px) {
+
+    html,
+    body {
+        overflow-x: hidden;
+        scroll-behavior: smooth;
+    }
+
+    header {
+        justify-content: space-between;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    .nav-links {
+        position: absolute;
+        top: 90px;
+        right: -220px;
+        /* Hidden by default */
+        flex-direction: column;
+        background: #010110;
+        width: 200px;
+        padding: 1rem;
+        transition: right 0.3s ease;
+        z-index: 100;
+    }
+
+    .nav-links.active {
+        right: 0;
+        /* Slide in */
+    }
+
+     .crypto-img {
+        margin-top: -10%;
+        width: 250px;
+        margin-left: -8%;
+    }
+
+    .access-btn-div {
+        /* background-color: gray; */
+        width: 80px;
+        height: 50px;
+        padding-left: 2px;
+        padding-top: 2px;
+        margin-left: -30%;
+        margin-top: 2%;
+        margin-right: 2px;
+        position: relative;
+        z-index: 50;
+    }
+
+    .access-btn {
+        width: 80px;
+        height: 40px;
+        padding: 1px;
+        font-size: 10px;
+        /* margin-left: 50%; */
+        border-radius: 10px;
+    }
+
+    footer{
+        height: auto;
+
+         .Copyright{
+            width: 300px;
+            span{
+                font-size: 15px;
+            }
+        }
+    }
+
+    .footer-container{
+        height: auto;
+
+        div{
+            width: 300px;
+            height: 180px;
+            margin-bottom: 40px;
+            /* background-color: red; */
+        }
+    }
+
+    .container{
+        width: 70%;
+
+        span{
+            font-size: 35px;
+        }
+
+        ul li{
+            padding: 7px;
+        }
+
+        p{
+            
+            font-size: 18px;
+        }
+    }
+
+}
