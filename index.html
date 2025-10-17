@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CryptoSprout</title>
+    <link rel="stylesheet" href="../CSS/styles.css">
+    <link rel="stylesheet" href="../@media-style/@media-style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+</head>
+
+<body>
+    <header class="navbar">
+        <img src="../images/CryptoLogo.png" alt="CryptoSprout-Img" class="crypto-img">
+
+        <ul class="nav-links" id="nav-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../HTML/about.html">About</a></li>
+            <li><a href="../HTML/token.html">Our Token</a></li>
+            <li><a href="../HTML/contact.html">Contact</a></li>
+            <li><a href="../HTML/support.html">Support</a></li>
+        </ul>
+
+        <div class="access-btn-div">
+            <a href="HTML/login.html">
+                <button class="access-btn">ACCESS WALLET</button>
+            </a>
+        </div>
+
+        <div class="menu-toggle" id="menu-toggle">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    </header>
+
+    <div class="clip-div">
+        <video class="clip background-video" autoplay muted loop poster="images/LOGO.png">
+            <source src="../images/cryptoVideo.mp4" type="video/mp4">
+        </video>
+    </div>
+
+
+    <div class="container">
+        <div class="first-child">
+            <strong>
+                <h1>Welcome to cryptosprout</h1>
+            </strong>
+            <span>The future of finance</span><br><br>
+            <button class="create-btn">CREATE WALLET</button>
+        </div>
+
+        <div class="second-child">
+            <div class="feature">
+                <div>
+                    <i class="fa fa-bolt"></i>
+                </div><br>
+                <span>Autonomous</span>
+            </div>
+
+            <div class="feature">
+                <div>
+                    <i class="fa fa-wallet"></i>
+                </div><br>
+                <span>Completely Secure</span>
+            </div>
+
+            <div class="feature">
+                <div>
+                    <i class="fa fa-chart-line"></i>
+                </div><br>
+                <span>Live Statistics</span>
+            </div>
+
+            <div class="feature">
+                <div>
+                    <i class="fa fa-database"></i>
+                </div><br>
+                <span>Automatic Backup</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="overall-div">
+        <div class="section_one_title">
+            <span>
+                Independent and total authority over your digital vault
+                <p>cryptosprout is very easy and understanding to use</p>
+            </span>
+        </div>
+
+        <div class="section_one">
+            <div class="step">
+                <div>
+                    <i class="fa fa-unlock-alt"></i>
+                </div><br>
+                <span>Sign up for cryptosprout</span>
+
+                <p>
+                    Buy your crypto currencies in less than 10 mins.
+                    Swap your tokens within the app.
+                    Keep track of prices and charts within the app.
+                </p>
+            </div>
+
+            <div class="step">
+                <div>
+                    <i class="fa fa-database"></i>
+                </div><br>
+                <span>Managing your assets</span>
+
+                <p>
+                    Keep your assets safe from hackers and scammers with a re-enforced 2FA.
+                    Easily earn interest on the crypto in your wallet.
+                </p>
+            </div>
+
+            <div class="step">
+                <div>
+                    <i class="fa fa-wallet"></i>
+                </div><br>
+                <span>Third Party support</span>
+
+                <p>
+                    You can buy crypto from our trusted third parties.
+                    We only collect the data used in signing up, we do not sell your data.
+                </p>
+            </div>
+        </div>
+
+        <div class="get-started-div">
+            <button class="get-started">GET STARTED</button>
+        </div>
+
+        <div class="section_two_title">
+            <span>
+                Supported currencies
+                <p>We support a variety of the top currencies and much more.</p>
+            </span>
+        </div>
+
+        <div class="section-two">
+            <div class="logo-carousel">
+                <div class="logo-track">
+                    <i class="fa-brands fa-bitcoin"></i>
+                    <i class="fa-brands fa-ethereum"></i>
+                    <i class="fa-brands fa-viacoin"></i>
+                    <i class="fa-brands fa-btc"></i>
+                    <i class="fa-brands fa-monero"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="section_three_title">
+            <span>
+                Top cryptocurrencies
+                <p>This cryptocurrencies are being monitored by our autonomous bot</p>
+            </span>
+        </div>
+
+        <div class="section-three">
+            <!-- Where the backend code take place later -->
+            <div class="controls">
+                <button id="refreshBtn" class="btn">Refresh</button>
+                <button id="notifyBtn" class="btn">Enable Notification</button>
+                <button id="clearAlerts" class="btn">Clear Alerts</button>
+            </div>
+
+            <div id="grid"></div>
+
+            <h2>Price Alerts</h2>
+        </div>
+
+        <div class="section-four">
+            <span>Our wallet is mobile friendly</span>
+            <br><br>
+            <p>Buy and sell crypto on all your devices.
+                Invest in cryptocurrencies by depositing 
+                directly from your debit card, easily and securely.
+                Receive funds directly to your bank accpount with zero
+                price volatility or risk. Get paid in Bitcoin, Ethereum, 
+                XRP, TRON and many more from anyone anywhere.
+                We are coming to your app store soon.
+            </p>
+
+            <div class="google-img-div">
+                <img src="./images/apple store.png" alt="" class="apple-img">
+                <img src="./images/google play.png" alt="" class="google-img">
+            </div>
+        </div>
+    </div>
+
+     <footer>
+        <div class="footer-container">
+            <div>
+                <img src="../images/CryptoLogo.png" alt="CryptoSprout-Img" class="crypto-img">
+
+                <p>
+                    Trade smarter, faster, and safer with CryptoSprout. 
+                    Join millions who trust us for real-time crypto trading, 
+                    unbeatable security, and next-gen financial freedom. 
+                    Your vault to the digital economy starts here.
+                </p>
+                
+                <div class="footer-links">
+                    <div>
+                        <a href="https://www.facebook.com">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                    </div>
+
+                    <div>
+                        <a href="https://www.youtube.com">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+
+                    <div>
+                        <a href="https://www.linkedin.com">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </div>
+
+                    <div>
+                        <a href="https://www.twitter.com">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <span>Company</span>
+                <ul>
+                    <li>About</li>
+                    <li>Contact</li>
+                    <li>Support</li>
+                </ul>
+            </div>
+
+            <div>
+                <span>Contact</span>
+                <ul>
+                    <li>admin@coinvaultchain.com</li>
+                    <li>4651 Westport Dr Mechanicsburg, PA,</li>
+                    <li>17055-4843 United States</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="Copyright">
+            <span>Copyright ©2025 All rights reserved | coinvaultchain</span>
+        </div>
+    </footer>
+
+
+    <script src="../JS/nav-script.js"></script>
+    <script src="../JS/script.js"></script>
+    <script src="../JS/crypto-tracker.js"></script>
+</body>
+
+</html>
