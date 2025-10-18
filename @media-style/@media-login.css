@@ -1,0 +1,47 @@
+@media screen and (max-width: 768px) {
+    form {
+        margin-top: 20%;
+    }
+}
+
+
+@media (max-width: 600px) {
+  form {
+    background: #fff;
+    padding: 20px;
+    margin: auto;
+    width: 300px;
+    border-radius: 8px;
+  }
+
+  input[type="text"]:focus,
+  input[type="email"]:focus,
+  input[type="password"]:focus,
+  input[type="tel"]:focus,
+  select:focus {
+    border: 1px solid black;
+    outline: none;
+  }
+  button {
+    background-color: rgb(111, 19, 249);
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    box-sizing: border-box;
+  }
+  button:hover {
+    background-color: blue;
+    cursor: progress;
+  }
+  label {
+    margin-top: 10px;
+    display: block;
+  }
+  h1 {
+    margin: auto;
+    color: rgb(121, 5, 230);
+    justify-content: flex-start;
+  }
+}

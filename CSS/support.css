@@ -199,108 +199,122 @@ header {
 
 }
 
+
+/* FOOTER */
+
 footer {
-    width: 100%;
-    border-top: 1px solid gray;
-    background-color: #010110;
-    height: auto;
+  width: 100%;
+  border-top: 1px solid gray;
+  background-color: #010110;
+  height: auto;
 }
 
 .footer-container {
-    width: 90%;
-    height: 330px;
-    padding: 10px;
-    margin: auto;
-    margin-top: 30px;
-    display: flex;
-    flex-flow: wrap row;
-    flex-direction: horizontal;
-    flex-shrink: 0;
-    gap: 60px;
-    border-bottom: 1px solid gray;
-    /* background-color: blue; */
+  width: 90%;
+  height: 330px;
+  padding: 10px;
+  margin: auto;
+  margin-top: 30px;
+  display: flex;
+  flex-flow: wrap row;
+  flex-direction: horizontal;
+  flex-shrink: 0;
+  gap: 60px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid gray;
 
-    div {
-        /* background-color: blue; */
-        width: 300px;
-        height: 280px;
-        margin-bottom: 5%;
-        padding: 15px;
 
-        img {
-            margin-top: -40%;
-        }
+  .company {
+    /* background-color: gray; */
+    width: 200px;
+    margin-bottom: 5%;
+    margin-left: 5%;
+  }
 
-        p {
-            width: 300px;
-            height: 140px;
-            display: inline-block;
-            text-align: justify;
-            /* background-color: red; */
-            font-size: 17px;
-            color: white;
-            margin-top: -25%;
-        }
+  div {
+    /* background-color: gray; */
+    width: 300px;
+    /* height: 280px; */
+    height: auto;
+    margin-bottom: 5%;
+    padding: 15px;
 
-        .footer-links {
-            width: 300px;
-            display: flex;
-            flex-direction: horizontal;
-            flex-flow: row;
-            height: auto;
-            gap: 10px;
-            margin: auto;
-            margin-top: -5%;
-            margin-left: -4%;
-            /* background-color: #4144a2; */
-            padding: 10px;
-
-            div {
-                width: 20px;
-                height: 20px;
-                border-radius: 50%;
-                background-color: #4144a2;
-                justify-content: center;
-                align-items: center;
-                text-align: center;
-                margin: auto;
-                border: 1px solid white;
-
-                a i {
-
-                    color: white;
-                    font-size: 18px;
-                }
-
-                a i:hover {
-                    color: #4144a2;
-                }
-            }
-
-            div:hover {
-                background-color: #010110;
-                transform: scale(1.2);
-            }
-        }
-
-        span {
-            margin-left: 35px;
-            color: white;
-            font-size: 20px;
-        }
-
-        ul {
-            list-style-type: none;
-        }
-
-        ul li {
-            padding: 12px;
-            color: white;
-            font-size: 18px;
-        }
+    img {
+      margin-top: -40%;
     }
 
+    p {
+      width: 330px;
+      height: auto;
+      display: inline-block;
+      text-align: justify;
+      /* background-color: red; */
+      font-size: 15px;
+      color: white;
+      margin-top: -135%;
+      margin-left: 15%;
+    }
+
+    .footer-links {
+      width: 300px;
+      display: flex;
+      flex-direction: horizontal;
+      flex-flow: row;
+      height: auto;
+      gap: 10px;
+      margin: auto;
+      margin-top: 2%;
+      margin-left: 7%;
+      /* background-color: #4144a2; */
+      padding: 10px;
+
+      div {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background-color: #4144a2;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: auto;
+        border: 1px solid white;
+
+        a i {
+
+          color: white;
+          font-size: 18px;
+        }
+
+        a i:hover {
+          color: #4144a2;
+        }
+      }
+
+      div:hover {
+        background-color: #010110;
+        transform: scale(1.2);
+      }
+    }
+
+    span {
+      margin-left: 35px;
+      color: white;
+      font-size: 20px;
+    }
+
+    ul {
+      list-style-type: none;
+    }
+
+    ul li {
+      padding: 12px;
+      color: white;
+      font-size: 18px;
+    }
+  }
+
 }
+
 
 .Copyright {
     width: 400px;

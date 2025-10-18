@@ -165,4 +165,90 @@
             }
         }
     }
+
+    .section-four {
+        margin-top: 10%;
+        padding-top: 20%;
+        height: auto;
+
+        span {
+            width: 100%;
+            font-size: 25px;
+            text-align: center;
+        }
+
+        p {
+            margin-top: 4%;
+        }
+    }
+
+    .google-img-div {
+        margin-top: 30%;
+    }
+
+    .apple-img {
+        width: 200px;
+        height: auto;
+        margin-left: -28%;
+    }
+
+    .google-img {
+        margin-left: -27%;
+    }
+
+    .card {
+        width: 70%;
+        background-color: #010110;
+    }
+
+    .coin-name {
+        color: white;
+        font-weight: 700;
+    }
+
+    .price {
+        color: white;
+    }
+
+    .Copyright {
+        width: 300px;
+        margin-top: 2%;
+
+        span {
+            font-size: 15px;
+        }
+    }
+
+    .footer-container {
+        gap: 10px;
+        padding-bottom: 130%;
+
+        .company{
+            height: 180px;
+            margin-top: 20px;
+            /* background-color: red; */
+            margin-left: -1%;
+        }
+
+        div {
+            height: 240px;
+            /* background-color: red; */
+
+
+            p {
+                width: 300px;
+                margin-left: 5%;
+            }
+
+            .footer-links{
+                margin-left: 1%;
+            }
+        }
+
+    }
+
+    .crypto-img-two {
+        margin-left: -100%;
+        width: 250px;
+    }
 }

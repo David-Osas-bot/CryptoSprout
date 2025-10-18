@@ -198,6 +198,7 @@ header {
     }
 }
 
+
 footer {
     width: 100%;
     border-top: 1px solid gray;
@@ -216,13 +217,22 @@ footer {
     flex-direction: horizontal;
     flex-shrink: 0;
     gap: 60px;
+    padding-bottom: 20px;
     border-bottom: 1px solid gray;
-    /* background-color: blue; */
+
+
+    .company {
+        /* background-color: gray; */
+        width: 200px;
+        margin-bottom: 5%;
+        margin-left: 5%;
+    }
 
     div {
-        /* background-color: blue; */
+        /* background-color: gray; */
         width: 300px;
-        height: 280px;
+        /* height: 280px; */
+        height: auto;
         margin-bottom: 5%;
         padding: 15px;
 
@@ -231,14 +241,15 @@ footer {
         }
 
         p {
-            width: 300px;
-            height: 140px;
+            width: 330px;
+            height: auto;
             display: inline-block;
             text-align: justify;
             /* background-color: red; */
-            font-size: 17px;
+            font-size: 15px;
             color: white;
-            margin-top: -25%;
+            margin-top: -135%;
+            margin-left: 15%;
         }
 
         .footer-links {
@@ -249,8 +260,8 @@ footer {
             height: auto;
             gap: 10px;
             margin: auto;
-            margin-top: -5%;
-            margin-left: -4%;
+            margin-top: 2%;
+            margin-left: 7%;
             /* background-color: #4144a2; */
             padding: 10px;
 
@@ -300,6 +311,7 @@ footer {
     }
 
 }
+
 
 .Copyright {
     width: 400px;

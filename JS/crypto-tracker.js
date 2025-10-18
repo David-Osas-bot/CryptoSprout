@@ -38,7 +38,7 @@ function render() {
             <div style="flex: 1;">
                 <div style="display: flex; justify-content: space-between; align-items: center">
                     <div>
-                        <div style="font-weight: 700">${coin.name}</div>
+                        <div class="coin-name">${coin.name}</div>
                         <div class="small">${coin.symbol.toUpperCase()}</div>
                     </div>
                     
@@ -52,8 +52,7 @@ function render() {
             </div>
         </div>
         <div style="margin-top: 10px; display:flex; gap: 8px; align-items:center">
-            <input type="number" class="input" id="alert-${coin.id}" placeholder="Alert price (USD)" />
-            <button class="btn" data-coin="${coin.id}" data-price-field="alert-${coin.id}">Set Alert</button>
+          
             <div class="small" style="margin-left:auto">Market Cap: $${Number(coin.market_cap).toLocaleString()}</div>
         </div>
         `;
@@ -113,45 +112,45 @@ function renderAlertList() {
     });
 }
 
-// Check if any alerts are triggered
-function checkAlerts() {
-    Object.entries(alerts).forEach(([coinId, target]) => {
-        const coin = coins.find(c => c.id === coinId);
-        if (!coin) return;
-        const current = coin.current_price;
-        if (current <= target) {
-            notify(`${coin.name} hit $${current} (target $${target})`);
-            delete alerts[coinId];
-            localStorage.setItem('crypto_alerts', JSON.stringify(alerts));
-            renderAlertList();
-        }
-    });
-}
+// // Check if any alerts are triggered
+// function checkAlerts() {
+//     Object.entries(alerts).forEach(([coinId, target]) => {
+//         const coin = coins.find(c => c.id === coinId);
+//         if (!coin) return;
+//         const current = coin.current_price;
+//         if (current <= target) {
+//             notify(`${coin.name} hit $${current} (target $${target})`);
+//             delete alerts[coinId];
+//             localStorage.setItem('crypto_alerts', JSON.stringify(alerts));
+//             renderAlertList();
+//         }
+//     });
+// }
 
-// Show notifications [browser or alert popup]
-function notify(message) {
-    if ('Notification' in window && Notification.permission === 'granted' && notificationEnabled) {
-        new Notification('Crypto Alert', { body: message });
-    } else {
-        alert(message);
-    }
-}
+// // Show notifications [browser or alert popup]
+// function notify(message) {
+//     if ('Notification' in window && Notification.permission === 'granted' && notificationEnabled) {
+//         new Notification('Crypto Alert', { body: message });
+//     } else {
+//         alert(message);
+//     }
+// }
 
-// Button events
-refreshBtn.addEventListener('click', fetchData);
+// // Button events
+// refreshBtn.addEventListener('click', fetchData);
 
-clearAlertBtn.addEventListener('click', () => {
-    alerts = {};
-    localStorage.setItem('crypto_alerts', JSON.stringify(alerts));
-    renderAlertList();
-});
+// clearAlertBtn.addEventListener('click', () => {
+//     alerts = {};
+//     localStorage.setItem('crypto_alerts', JSON.stringify(alerts));
+//     renderAlertList();
+// });
 
-notifyBtn.addEventListener('click', async () => {
-    if (!('Notification' in window)) return alert('Browser notifications not supported');
-    const perm = await Notification.requestPermission();
-    notificationEnabled = perm === 'granted';
-    notifyBtn.textContent = notificationEnabled ? 'Notifications Enabled' : 'Enable Notification';
-});
+// notifyBtn.addEventListener('click', async () => {
+//     if (!('Notification' in window)) return alert('Browser notifications not supported');
+//     const perm = await Notification.requestPermission();
+//     notificationEnabled = perm === 'granted';
+//     notifyBtn.textContent = notificationEnabled ? 'Notifications Enabled' : 'Enable Notification';
+// });
 
 // Initial fetch + auto refresh
 fetchData();

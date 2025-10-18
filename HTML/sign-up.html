@@ -5,19 +5,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../CSS/sign-up.css">
+    <link rel="stylesheet" href="../@media-style/@media-sign-up.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>sign_up page</title>
 </head>
 
 <body>
     <form>
+        <a href="../HTML/login.html">
+            <span class="fa fa-arrow-circle-left back-arrow">
+            </span>
+        </a>
+
         <div class="logo-div">
             <img src="../IMAGES/CryptoLogo.png" alt="" class="crypto-img">
         </div>
-        <div>
+        <div class="user">
             <label for="username">Username</label>
             <input type="text" id="username" name="username" placeholder="Enter username" required>
         </div>
@@ -231,11 +240,12 @@
         </div>
         <div>
             <label for="confirm-password">Confirm Password</label>
-            <input type="password" placeholder="Confirm password" id="confirm-password" name="confirm-password" required>
+            <input type="password" placeholder="Confirm password" id="confirm-password" name="confirm-password"
+                required>
         </div>
-        <div>
+        <div class="agree">
             <input type="checkbox" id="terms" name="terms" required>
-            <label for="terms">I agree to the Terms and Conditions</label>
+            <label for="terms" class="terms">I agree to the Terms and Conditions</label>
         </div>
         <button type="submit">SIGN UP NOW</button>
         <div class="account">

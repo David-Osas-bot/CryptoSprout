@@ -32,7 +32,7 @@
         /* Slide in */
     }
 
-     .crypto-img {
+    .crypto-img {
         margin-top: -10%;
         width: 250px;
         margin-left: -8%;
@@ -60,48 +60,60 @@
         border-radius: 10px;
     }
 
-    footer{
+    footer {
         height: auto;
 
-         .Copyright{
+        .Copyright {
             width: 300px;
-            span{
+
+            span {
                 font-size: 15px;
             }
         }
     }
 
-    .footer-container{
-        height: auto;
 
-        div{
-            width: 300px;
+    .footer-container {
+        gap: 10px;
+        padding-bottom: 130%;
+
+        .company {
             height: 180px;
-            margin-bottom: 40px;
+            margin-top: 20px;
+            margin-left: -1%;
+        }
+
+        div {
+            height: 240px;
             /* background-color: red; */
 
-            p{
-                font-size: 14px;
-                text-align: left;
-                margin-left: -2%;
-                margin-right: 10%;
+
+            p {
+                width: 300px;
+                margin-left: 5%;
+            }
+
+            .footer-links {
+                margin-left: 1%;
             }
         }
+
     }
 
-    .container{
+
+    .container {
         width: 70%;
 
-        span{
+        span {
             font-size: 35px;
         }
 
-        ul li{
+        ul li {
             padding: 7px;
         }
 
-        p{
-            
+        p {
+
             font-size: 18px;
         }
     }

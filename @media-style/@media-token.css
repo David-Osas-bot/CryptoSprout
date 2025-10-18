@@ -61,26 +61,45 @@
         margin-left: -8%;
     }
 
-     footer{
+    
+    footer {
         height: auto;
 
-         .Copyright{
+        .Copyright {
             width: 300px;
-            span{
+
+            span {
                 font-size: 15px;
             }
         }
     }
 
-    .footer-container{
-        height: auto;
 
-        div{
-            width: 300px;
+    .footer-container {
+        gap: 10px;
+        padding-bottom: 130%;
+
+        .company {
             height: 180px;
-            margin-bottom: 40px;
-            /* background-color: red; */
+            margin-top: 20px;
+            margin-left: -1%;
         }
+
+        div {
+            height: 240px;
+            /* background-color: red; */
+
+
+            p {
+                width: 300px;
+                margin-left: 5%;
+            }
+
+            .footer-links {
+                margin-left: 1%;
+            }
+        }
+
     }
 
     .container{

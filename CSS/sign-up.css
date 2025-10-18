@@ -69,8 +69,9 @@ label {
 }
 .crypto-img {
   width: 350px;
-  margin-top: -70%;
+  margin-top: -60%;
   margin-left: -30%;
+  /* margin-bottom: 7%; */
 }
 nav {
   width: 45%;
@@ -111,113 +112,25 @@ nav {
   }
 }
 
-@media (max-width: 600px) {
-  body {
-    font-family: "Nunito", sans-serif;
-    background-color: #010110;
-    margin: 0;
-    padding: 0;
-  }
-  form {
-    background: #fff;
-    padding: 20px;
-    margin: auto;
-    margin-top: 3%;
-    width: 300px;
-    height: auto;
-    border-radius: 8px;
-    font-size: 15px;
-    font-weight: 600;
-  }
-  input[type="text"],
-  input[type="email"],
-  input[type="password"],
-  input[type="tel"],
-  select {
-    background-color: #4144a2;
-    width: 100%;
-    height: 70px;
-    padding: 10px;
-    padding-left: 15px;
-    margin: 10px 0;
-    border: 1px solid #ccc;
-    border-radius: 20px;
-    outline: none;
-    box-sizing: border-box;
-  }
-  button {
-    background-color: #4144a2;
-    width: 100%;
-    height: 70px;
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid black;
-    transition: 0.7s ease-in-out;
-    border-radius: 40px;
-    color: white;
-    box-sizing: border-box;
-  }
-  ::placeholder {
-    color: white;
-    font-weight: 600;
-    font-family: "Nunito", sans-serif;
-  }
-  button:hover {
-    background-color: white;
-    color: black;
-    cursor: pointer;
-  }
-  label {
-    margin-top: 10px;
-    display: block;
-  }
-  .logo-div {
-    width: 80%;
-    height: 70px;
-    /* background-color: gray; */
-    margin: auto;
-  }
-  .crypto-img {
-    width: 350px;
-    margin-top: -70%;
-    margin-left: -30%;
-  }
-  nav {
-    width: 45%;
-    margin-top: 5%;
-    margin: auto;
-    margin-top: 30px;
-
-    a {
-      color: gray;
-      font-size: 16px;
-      font-weight: 600;
-    }
-  }
-  .account {
-    display: flex;
-    flex-flow: row;
-    flex-direction: horizontal;
-    flex: 1;
-    gap: 90px;
-    margin-top: 6%;
-  }
-
-  .signIn {
-    display: block;
-    width: 120px;
-    height: auto;
-
-    a {
-      text-decoration: none;
-      color: deepskyblue;
-    }
-  }
-
-  .phrase {
-    a {
-      text-decoration: none;
-      color: deepskyblue;
-    }
-  }
+.agree{
+  display: flex;
+  justify-content: center;
+  gap: 5px;
 }
+
+.terms{
+  margin-top: -1px;
+}
+
+.back-arrow{
+  display: flex;
+  font-size: 20px;
+  color: #4144a2;
+  position: relative;
+  float: right;
+}
+
+.user{
+  margin-top: 10%;
+}
+
