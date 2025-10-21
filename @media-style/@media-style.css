@@ -16,13 +16,14 @@
 
     .nav-links {
         position: absolute;
-        top: 90px;
-        right: -220px;
+        top: 70px;
+        right: -250px;
         /* Hidden by default */
         flex-direction: column;
         background: #010110;
         width: 200px;
         padding: 1rem;
+        height: 100vh;
         transition: right 0.3s ease;
         z-index: 100;
     }
@@ -36,9 +37,9 @@
 
 
     .crypto-img {
-        margin-top: -10%;
         width: 250px;
         margin-left: -8%;
+        padding-bottom: 2px;
     }
 
 
@@ -167,6 +168,7 @@
     }
 
     .section-four {
+        width: 80%;
         margin-top: 10%;
         padding-top: 20%;
         height: auto;
@@ -238,6 +240,7 @@
             p {
                 width: 300px;
                 margin-left: 5%;
+                padding-top: 2px;
             }
 
             .footer-links{
@@ -245,10 +248,5 @@
             }
         }
 
-    }
-
-    .crypto-img-two {
-        margin-left: -100%;
-        width: 250px;
     }
 }

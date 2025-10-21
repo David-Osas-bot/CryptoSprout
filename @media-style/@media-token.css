@@ -16,16 +16,18 @@
 
     .nav-links {
         position: absolute;
-        top: 90px;
-        right: -220px;
+        top: 70px;
+        right: -250px;
         /* Hidden by default */
         flex-direction: column;
         background: #010110;
         width: 200px;
         padding: 1rem;
+        height: 100vh;
         transition: right 0.3s ease;
         z-index: 100;
     }
+
 
     .nav-links.active {
         right: 0;
