@@ -16,23 +16,25 @@
 
     .nav-links {
         position: absolute;
-        top: 90px;
-        right: -220px;
+        top: 70px;
+        right: -250px;
         /* Hidden by default */
         flex-direction: column;
         background: #010110;
         width: 200px;
         padding: 1rem;
+        height: 100vh;
         transition: right 0.3s ease;
         z-index: 100;
     }
+
 
     .nav-links.active {
         right: 0;
         /* Slide in */
     }
 
-    
+
     .access-btn-div {
         /* background-color: gray; */
         width: 80px;
@@ -55,13 +57,18 @@
         border-radius: 10px;
     }
 
-     .crypto-img {
-        margin-top: -10%;
+    .crypto-img,
+    .crypto-img-two {
         width: 250px;
-        margin-left: -8%;
+        margin-left: -10%;
+        margin-bottom: 6%;
     }
 
-    
+    .crypto-img-two {
+        margin-left: 3%;
+    }
+
+
     footer {
         height: auto;
 
@@ -82,39 +89,35 @@
         .company {
             height: 180px;
             margin-top: 20px;
-            margin-left: -1%;
+            margin-left: -12%;
         }
 
         div {
             height: 240px;
-            /* background-color: red; */
+            margin-left: -12%;
 
 
             p {
                 width: 300px;
-                margin-left: 5%;
-            }
-
-            .footer-links {
-                margin-left: 1%;
+                padding-top: 2px;
             }
         }
 
     }
 
-    .container{
+    .container {
         width: 70%;
 
-        span{
+        span {
             font-size: 35px;
         }
 
-        ul li{
+        ul li {
             padding: 7px;
         }
 
-        p{
-            
+        p {
+
             font-size: 18px;
         }
     }

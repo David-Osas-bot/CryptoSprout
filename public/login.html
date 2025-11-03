@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Login</title>
+  <link rel="stylesheet" href="../CSS/login-reg.css">
+</head>
+
+<body>
+  <div class="container">
+    <h2>Login</h2>
+
+    <form id="loginForm">
+      <input type="email" name="email" placeholder="Email" required><br>
+      <input type="password" name="password" placeholder="Password" required><br>
+      <button type="submit">Login</button>
+    </form>
+
+    <p>Don’t have an account? <a href="register.html" class="login-link">Register</a></p>
+  </div>
+
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <p id="modal-message"></p>
+      <button id="closeModal">OK</button>
+    </div>
+  </div>
+
+  <script>
+    const form = document.getElementById('loginForm');
+    const modal = document.getElementById('modal');
+    const modalMessage = document.getElementById('modal-message');
+    const closeModal = document.getElementById('closeModal');
+
+    let shouldRedirect = false; // track success state
+
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const data = Object.fromEntries(new FormData(e.target));
+
+      try {
+        const res = await fetch('http://localhost:5000/api/auth/login', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(data)
+        });
+
+        const msg = await res.json();
+
+        // ✅ Check success or error
+        if (res.ok) {
+          modalMessage.textContent = msg.message || 'Login successful!';
+          shouldRedirect = true; // mark success
+        } else {
+          modalMessage.textContent = msg.message || 'Invalid credentials.';
+          shouldRedirect = false;
+        }
+
+      } catch (err) {
+        // ✅ Handle unreachable server
+        modalMessage.textContent = 'Server not reachable. Please try again later.';
+        shouldRedirect = false;
+      }
+
+      // ✅ Show the modal in all cases
+      modal.style.display = 'flex';
+    });
+
+    closeModal.addEventListener('click', () => {
+      modal.style.display = 'none';
+
+      // ✅ Redirect only on successful login
+      if (shouldRedirect) {
+        window.location.href = '/index.html'; // go to homepage
+      }
+    });
+  </script>
+
+</body>
+
+</html>

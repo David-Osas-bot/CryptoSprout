@@ -16,13 +16,14 @@
 
     .nav-links {
         position: absolute;
-        top: 90px;
-        right: -220px;
+        top: 70px;
+        right: -250px;
         /* Hidden by default */
         flex-direction: column;
         background: #010110;
         width: 200px;
         padding: 1rem;
+        height: 100vh;
         transition: right 0.3s ease;
         z-index: 100;
     }
@@ -35,13 +36,15 @@
 
 
 
-    .crypto-img {
-        margin-top: -10%;
+    .crypto-img, .crypto-img-two{
         width: 250px;
-        margin-left: -8%;
+        margin-left: -10%;
+        margin-bottom: 6%;
     }
 
-
+    .crypto-img-two{
+        margin-left: 3%;
+    }
 
     .access-btn-div {
         /* background-color: gray; */
@@ -78,8 +81,7 @@
         height: 350px;
         margin-left: -16%;
 
-        /* margin-top: -25%; */
-        /* background-color: gray; */
+
         h1 {
             font-size: 45px;
         }
@@ -166,7 +168,12 @@
         }
     }
 
+    .section-three {
+        margin-top: 16%;
+    }
+
     .section-four {
+        width: 80%;
         margin-top: 10%;
         padding-top: 20%;
         height: auto;
@@ -183,17 +190,23 @@
     }
 
     .google-img-div {
-        margin-top: 30%;
+        width: 100%;
+        height: 200px;
+        display: block;
+        margin: auto;
+        margin-top: 60%;
+
     }
 
     .apple-img {
         width: 200px;
         height: auto;
-        margin-left: -28%;
+        margin-left: 12%;
     }
 
     .google-img {
-        margin-left: -27%;
+        margin-top: -20%;
+        margin-left: 12%;
     }
 
     .card {
@@ -223,32 +236,22 @@
         gap: 10px;
         padding-bottom: 130%;
 
-        .company{
+        .company {
             height: 180px;
             margin-top: 20px;
-            /* background-color: red; */
-            margin-left: -1%;
+            margin-left: -12%;
         }
 
         div {
             height: 240px;
-            /* background-color: red; */
+            margin-left: -12%;
 
 
             p {
                 width: 300px;
-                margin-left: 5%;
-            }
-
-            .footer-links{
-                margin-left: 1%;
+                padding-top: 2px;
             }
         }
 
-    }
-
-    .crypto-img-two {
-        margin-left: -100%;
-        width: 250px;
     }
 }
