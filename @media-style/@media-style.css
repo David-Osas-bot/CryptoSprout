@@ -36,10 +36,17 @@
 
 
 
+<<<<<<< HEAD
     .crypto-img, .crypto-img-two{
         width: 250px;
         margin-left: -10%;
         margin-bottom: 6%;
+=======
+    .crypto-img {
+        width: 250px;
+        margin-left: -8%;
+        padding-bottom: 2px;
+>>>>>>> 5980070f1eee53d3321b0f9439b3df220c3d3dfe
     }
 
     .crypto-img-two{
@@ -249,7 +256,16 @@
 
             p {
                 width: 300px;
+<<<<<<< HEAD
                 padding-top: 2px;
+=======
+                margin-left: 5%;
+                padding-top: 2px;
+            }
+
+            .footer-links{
+                margin-left: 1%;
+>>>>>>> 5980070f1eee53d3321b0f9439b3df220c3d3dfe
             }
         }
 
